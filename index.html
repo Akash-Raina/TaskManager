@@ -1,14 +1,27 @@
 <!doctype html>
 <html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="/src/output.css" rel="stylesheet">
-</head>
-<body>
-  <h1 class="text-3xl font-bold underline">
-    Hello world!
-  </h1>
-  <script src="script.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/src/output.css" rel="stylesheet" />
+  </head>
+  <body class="ml-3 bg-slate-700 font-primary">
+    <h1 class="text-gray-400 text-2xl text-center m-2">Task list 2024</h1>
+    <div class="add-task flex items-center gap-2">
+        <input data-insert type="text" class="w-72 h-11 rounded-2xl bg-gray-800 borde-2 p-2 md:w-3/5 text-white" name="add-text-bar" placeholder="What do you have planned?">
+        <label for="add-text-bar">
+          <button  data-task class="text-white border-gray-900 bg-green-500 h-8 w-20 rounded-2xl ">Add task</button>
+        </label>
+    </div>
+    <h2 class="text-xl text-gray-400 my-2">Tasks</h2>
+    <!-- <div class="all-tasks flex rounded-2xl bg-gray-800 borde-2 p-2 w-96 gap-2 md:w-2/4">
+      <input data-stored type="text" class="bg-gray-800 outline-none w-72 md:w-full"/>
+      <button data-edit class="text-white bg-yellow-500 h-8 w-20 rounded-2xl ">Edit</button>
+      <button data-delete class="text-white bg-red-500 h-8 w-20 rounded-2xl ">Delete</button>
+    </div> -->
+    <div id="add-new-task" class="mt-2">
+
+    </div>
+    <script src="script.js"></script>
+  </body>
 </html>
